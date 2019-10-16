@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="70.0" prefWidth="142.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimerController">
+   <children>
+      <Button fx:id="set" layoutX="3.0" layoutY="40.0" mnemonicParsing="false" onAction="#set" prefHeight="28.0" prefWidth="22.0" text="S" />
+      <Button fx:id="pause" layoutX="32.0" layoutY="40.0" mnemonicParsing="false" onAction="#pause" prefHeight="28.0" prefWidth="22.0" text="P" />
+      <Button fx:id="reset" layoutX="60.0" layoutY="40.0" mnemonicParsing="false" onAction="#reset" prefHeight="28.0" prefWidth="22.0" text="R" />
+      <Button fx:id="close" layoutX="115.0" layoutY="40.0" mnemonicParsing="false" onAction="#close" prefHeight="28.0" prefWidth="22.0" text="X" />
+      <Button fx:id="minimize" layoutX="88.0" layoutY="40.0" mnemonicParsing="false" onAction="#minimize" prefHeight="28.0" prefWidth="22.0" text="_" />
+      <TextField fx:id="time" layoutX="50.0" layoutY="4.0" prefHeight="28.0" prefWidth="51.0" />
+   </children>
+</AnchorPane>
