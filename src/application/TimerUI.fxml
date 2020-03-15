@@ -13,6 +13,6 @@
       <Button fx:id="reset" layoutX="60.0" layoutY="40.0" mnemonicParsing="false" onAction="#reset" prefHeight="28.0" prefWidth="22.0" text="R" />
       <Button fx:id="close" layoutX="115.0" layoutY="40.0" mnemonicParsing="false" onAction="#close" prefHeight="28.0" prefWidth="22.0" text="X" />
       <Button fx:id="minimize" layoutX="88.0" layoutY="40.0" mnemonicParsing="false" onAction="#minimize" prefHeight="28.0" prefWidth="22.0" text="_" />
-      <TextField fx:id="time" layoutX="50.0" layoutY="4.0" prefHeight="28.0" prefWidth="51.0" />
+      <Label fx:id="time" layoutX="57.0" layoutY="14.0" text="Label" />
    </children>
 </AnchorPane>

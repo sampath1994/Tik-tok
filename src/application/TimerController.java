@@ -2,6 +2,7 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -23,7 +24,7 @@ public class TimerController {
 	private Button close;
 	
 	@FXML
-	private TextField time;
+	private Label time;
  
 	Thread thread;
 	boolean stp = false;
@@ -76,7 +77,8 @@ public class TimerController {
 	
 	private void setTime(String t) {
 		synchronized (this) {
-			time.setText(t);
+			//time.setText(t);
+			 Platform.runLater(() -> time.setText(t));
 		}
 	}
 }
